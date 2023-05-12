@@ -10,10 +10,12 @@
 }
 body{
     font-family: montserrat;
+
 }
-nav{
-	padding:0 50px;
-	width: 100%;
+
+header{
+	position: relative;
+	padding: 0 2rem;
 }
 .flex{
 	display: flix;
@@ -22,21 +24,29 @@ nav{
 }
 nav{
     background:#fff;
-    height: 80px;
+    height: 60px;
     width: 100%;
 	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
 	justify-content:space-between;
 	align-items: center;
 	padding: 0 1.5rem;
 }
-label.logo{
-    color: green;
-    font-size: 15px;
-    line-height: 50px;
-    padding: 0 15px;
-    font-weight: bold;
-}
 
+.navbar .links{
+  display: flex;
+  gap: 1rem;
+}
+.navbar .toggle_btn{
+	color: #045f19;
+	font-size: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+fa fa-x{
+	color: #045f19;
+}
 nav ul{
     float: right;
     margin-right: 20px;
@@ -46,7 +56,7 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-}
+}	
 nav ul li a{
     color: #199421;
     font-size: 16px;
@@ -59,66 +69,55 @@ a.active,a:hover{
     background: #4fb753;
     transition: .5s;
 }
-.check{
-    font-size: 30px;
-    color: green;
-    float:right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+.email{
+	font-size: 12px;
+	padding: 5px 10px;
+	margin-bottom: 05px;
 }
-#checkbtn{
-    display: none;
+.call
+{
+	font-size: 15px;
+	margin-bottom: 15px;
+}
 
+/*dropdown menu*/
+.dropdown_menu{
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	height: 0;
+	background: rgba(58, 214, 37, 0.1);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-@media(max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
+.dropdown_menu.open{
+  height: 240px;
 }
-@media(max-width: 858px){
-    .check{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background:green;
-        top: 80px;
-        left: -30%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: flex;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #10ed18;
-
-    }
-    #checkbtn:checked ~ ul{
-        left: 0;
-
-    }
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-header{
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-	z-index: 22;
+/*responsive*/
+@media(max-width:992px){
+	.navbar .links{
+       display: none;
+	}
+	.navbar .toggle_btn{
+		display: block;
+	}
+	.dropdown_menu{
+		display: block;
+	}
+}
+@media(max-width: 578px){
+	.dropdown_menu{
+		left: 2rem;
+		width: unset;
+	}
 }
 .sign{
 	float: right;
