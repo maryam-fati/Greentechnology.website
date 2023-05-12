@@ -4,28 +4,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>Green Environment Technologies</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="get.css">
+	
 
 </head>
 <body>
  
 	<!-- header section starts  -->
-
 	<header>
 		<div class="num" style="height: 20px; width: 100%; background-color: #fff;">
 			 
 		</div>
 		<nav class="navbar">
-		  <input type="checkbox" id="checkbtn">
-		  <label for="" class="check">
-			<i class="fa fa-bars"></i>
+		 <label class="logo">
+		  <img src="get.png (2).png " alt="" style="margin-left: 0px; margin-bottom: 20px; margin-right: 10px; ">
 		  </label>
-		  <img src="get.png (2).png " alt="" style="margin-left: 5px; margin-bottom: 30px; ">
-		  <label class="logo"></label>
 		  <div class="left flex" style="color:darkgreen; margin-right: 50px;">
 			<div class="email">
 				<i class="fa fa-envelope"></i>
@@ -36,8 +29,8 @@
 				<span>+92 303 5388246</span>
 			</div>
 		</div>
-		  <ul>
-			<li><a class="active" href="#Home">Home</a></li>
+		  <ul class="links">
+			<li><a class="active" href="#slider">Home</a></li>
 			<li><a href="#Abou Us">About Us</a></li>
 			<li><a href="#Services">Service</a></li>
 			<li><a href="#Blogs">Blogs</a></li>
@@ -45,8 +38,21 @@
 			<li><a href="contact.html.html">Contact Us</a></li>
 			
 		  </ul>
+		  <div class="toggle_btn">
+			<i class="fa fa-bars"></i>
+		  </div>
 		</nav>
+		<div class="dropdown_menu">
+			<li><a class="active" href="#Home">Home</a></li>
+			<li><a href="#Abou Us">About Us</a></li>
+			<li><a href="#Services">Service</a></li>
+			<li><a href="#Blogs">Blogs</a></li>
+			<li><a href="#Projects">Projects</a></li>
+			<li><a href="contact.html.html">Contact Us</a></li>
+			
+		</div>
 		</header>
+	
     <div class="slider">
 		<div class="myslide fade">
 			<div class="txt">
@@ -355,7 +361,6 @@
 			<li>
 				<span><i class="fa fa-phone-alt"></i></span>
 				<span> <a href="#+923035388246"></a> +92 303 5388246</span>
-				<span> <a href="#+923035388246"></a> +92 303 5388246</span>
 			</li>
 			<li>
 				<span><i class="fa fa-envelope"></i></span>
@@ -368,12 +373,22 @@
 	<div class="copyrighttext">
 		<p>Copyright 2023 Green Environment Technologies. All Rights Reserved</p>
 	</div>
-<!-- header section ends -->
-
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<!-- custom js file link  -->
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropdownMenu = document.querySelector('.dropdown_menu')
+
+		toggleBtn.onclick = function(){
+			dropdownMenu.classList.toggle('open')
+			const isOpen = dropdownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa fa-x'
+			: 'fa fa-bars'
+		}
+	</script>
 		<script src="get.js"></script>
+		
 </body>
 </html>
-
-
