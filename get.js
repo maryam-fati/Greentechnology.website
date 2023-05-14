@@ -1,4 +1,3 @@
-
 const myslide = document.querySelectorAll('.myslide'),
 	  dot = document.querySelectorAll('.dot');
 let counter = 1;
