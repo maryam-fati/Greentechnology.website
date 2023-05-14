@@ -2,6 +2,10 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+ />
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>Green Environment Technologies</title>
     <link rel="stylesheet" href="get.css">
@@ -11,169 +15,155 @@
 <body>
  
 	<!-- header section starts  -->
-	<header>
-		<div class="num" style="height: 20px; width: 100%; background-color: #fff;">
-			 
-		</div>
-		<nav class="navbar">
-		 <label class="logo">
-		  <img src="get.png (2).png " alt="" style="margin-left: 0px; margin-bottom: 20px; margin-right: 10px; ">
-		  </label>
-		  <div class="left flex" style="color:darkgreen; margin-right: 50px;">
-			<div class="email">
+
+    <header>
+		<div class="containerone">
+			<nav class="navbar">
+				<div class="logo">
+					<img src="get.png (2).png" alt="">
+				    <i class="fa fa-phone-alt"></i>
+				<span>+92 303 5388246</span>
 				<i class="fa fa-envelope"></i>
 				<span>muhammadjahanzaib9@gmail.com</span>
-			</div>
-			<div class="call">
-				<i class="fa fa-phone-alt"></i>
-				<span>+92 303 5388246</span>
-			</div>
+				</div>
+				<ul>
+					<div class="btn-close">
+						<i class="fa-solid fa-xmark"></i> 
+					</div>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#Aboutus">AboutUS</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#Blog">Blog</a></li>
+					<li><a href="#project">Projects</a></li>
+					<li><a href="contact.html.html">ContactUs</a></li>
+				</ul>
+				<div class="btn-menu">
+					<i class="fas fa-bars menu-btn"></i>
+				</div>
+			</nav>
 		</div>
-		  <ul class="links">
-			<li><a class="active" href="#slider">Home</a></li>
-			<li><a href="#Abou Us">About Us</a></li>
-			<li><a href="#Services">Service</a></li>
-			<li><a href="#Blogs">Blogs</a></li>
-			<li><a href="#Projects">Projects</a></li>
-			<li><a href="contact.html.html">Contact Us</a></li>
-			
-		  </ul>
-		  <div class="toggle_btn">
-			<i class="fa fa-bars"></i>
-		  </div>
-		</nav>
-		<div class="dropdown_menu">
-			<li><a class="active" href="#Home">Home</a></li>
-			<li><a href="#Abou Us">About Us</a></li>
-			<li><a href="#Services">Service</a></li>
-			<li><a href="#Blogs">Blogs</a></li>
-			<li><a href="#Projects">Projects</a></li>
-			<li><a href="contact.html.html">Contact Us</a></li>
-			
-		</div>
-		</header>
-	
-    <div class="slider">
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Introduction:</h1>
-				<p>Briefly describe the mission and values of Green <br>
-          Environment Technologies and what sets it apart from other EPC firms.</p>
-          <span class="sign"><a class="act" href="sign-up.html">SIGN UP</a></span>
-		      <span class="sign"><a href="sign-in.html">SIGN IN</a></span>
-			</div>
-			<img src="green.jpy.jpg" style="width: 100%; height: 100%; background-size: cover;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Services:</h1>
-				<p>Provide an overview of the services offered by GET, <br> including
-          EPC, environmental consulting, and other related services.</p>
-          <span class="sign"><a class="act" href="sign-up.html">SIGN UP</a></span>
-		      <span class="sign"><a href="sign-in.html">SIGN IN</a></span>
-			</div>
-			<img src="green2.jpy.jpg" style="width: 100%; height: 100%; background-size: cover;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Why Choose Us:</h1>
-				<p>Highlight the benefits of working with GET, <br> such as
-          expertise in environmental regulations, <br> a focus on sustainable solutions,
-          and a commitment to customer satisfaction.</p>
-          <span class="sign"><a class="act" href="sign-up.html">SIGN UP</a></span>
-		      <span class="sign"><a href="sign-in.html">SIGN IN</a></span>
-			</div>
-			<img src="green1.jpy.jpg" style="width: 100%; height: 100%; background-size: cover;">
-		</div>
-		
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Testimonials:</h1>
-				<p>Include quotes or reviews from satisfied clients to build
-          trust with potential customers.</p>
-          <span class="sign"><a class="act" href="sign-up.html">SIGN UP</a></span>
-		      <span class="sign"><a href="sign-in.html">SIGN IN</a></span>
-			</div>
-			<img src="green3.jpy.jpg" style="width: 100%; height: 100%; background-size: cover;">
-		</div>
-    	
-		<div class="myslide fade">
-			<div class="txt">
-				<h1>Call to Action:</h1>
-				<p>Encourage visitors to contact GET for more information
-          or to schedule a consultation.</p>
-          <span class="sign"><a class="act" href="sign-up.html">SIGN UP</a></span>
-		      <span class="sign"><a href="sign-in.html">SIGN IN</a></span>
-			</div>
-			<img src="green4.jpy.webp" style="width: 100%; height: 100%; background-size: cover;">
-		</div>
-		<!-- /fade css -->
-		
-		<!-- onclick js -->
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		
-		<div class="dotsbox" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span>
-			<span class="dot" onclick="currentSlide(2)"></span>
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-		</div>
-	</div>
-
+	</header>
 
 
 	
-		<div class="heading">
-			<h1>About Us</h1>
-			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nam placeat facilis sunt dicta necessitatibus laudantium tempore modi beatae accusantium ducimus dolorum dolorem alias architecto, magni culpa? Dignissimos, illum fugit?</p>
-		</div>
-    <div class="contanier">
-		<section class="about">
-			<div class="about-image" style="margin-left:30px; width: 0%;">
-				<img src="green3.jpy.jpg" alt="">
+
+       <!--Home-->   	
+	   <div class="container swiper mySwiper" id="home">
+		<div class="content swiper-wrapper">
+			<div class="slides swiper-slide">
+				<img src="green.jpy.jpg" alt="">
+				<div class="img_overlay">
+					  <h2>Introduction</h2>
+					<p>Briefly describe the mission and values of Green
+						Environment
+						<br>
+						Technologies and what sets it apart from other EPC firms.</p>
+					<a href="sign-in.html">sign-in</a>
+					<a href="sign-up.html">sign-up</a>
+				</div>
 			</div>
-			<div class="about-contant">
-				<h4>History</h4>
-				<p>Provide a brief overview of the founding of GET and its growth
-					over the years.Briefly describe the mission and values of Green
-					Environment Technologies and what sets it apart from other EPC firms.</p>
-					<a href="" class="read-more">Read More</a>
-			</div>
-		</section>
-	</div>
-    <div class="contanier">
-		<section class="about">
-			<div class="about-contant" style="margin-left: 30px;">
-				<h4>Mission and values</h4>
-				<p>Expand on the mission and values mentioned on
-					the home page, and provide more detail on the principles that guide
-					GET's work.</p>
-					<a href="" class="read-more">Read More</a>
-			</div>
-			<div class="about-image">
+			<div class="slides swiper-slide">
 				<img src="green1.jpy.jpg" alt="">
+				<div class="img_overlay">
+					  <h2>Services</h2>
+					<p>Provide an overview of the services offered by GET, including
+						EPC, environmental consulting,
+						<br>
+						and other related services.
+						</p>
+					<a href="sign-in.html">sign-in</a>
+					<a href="sign-up.html">sign-up</a>
+				</div>
 			</div>
-		</section>
-	</div>
-	<div class="contanier">
-		<section class="about">
-			<div class="about-image" style="margin-left:30px; width: 0%;">
+			<div class="slides swiper-slide">
 				<img src="green2.jpy.jpg" alt="">
+				<div class="img_overlay">
+					  <h2>Why Choose Us</h2>
+					<p>Highlight the benefits of working with GET, such as
+						expertise in environmental regulations, a focus on sustainable solutions,
+						and a commitment to customer satisfaction.</p>
+					<a href="sign-in.html">sign-in</a>
+					<a href="sign-up.html">sign-up</a>
+				</div>
 			</div>
-			<div class="about-contant">
-				<h4>Team</h4>
-				<p>Introduce key members of the GET team, highlighting their
-					expertise and experience in environmental engineering, project
-					management, and other relevant areas.</p>
-					<a href="" class="read-more">Read More</a>
+			<div class="slides swiper-slide">
+				<img src="green3.jpy.jpg" alt="">
+				<div class="img_overlay">
+					  <h2>Testimonials</h2>
+					<p>Include quotes or reviews from satisfied clients to build
+						trust with potential customers.</p>
+					<a href="sign-in.html">sign-in</a>
+					<a href="sign-up.html">sign-up</a>
+				</div>
 			</div>
-		</section>
-		<br>
-		<div class="heading">
+			<div class="slides swiper-slide">
+				<img src="green4.jpy.webp" alt="">
+				<div class="img_overlay">
+					<h2>Call to Action</h2>
+					<p>Encourage visitors to contact GET for more information
+						or to schedule a consultation.</p>
+					<a href="sign-in.html">sign-in</a>
+					<a href="sign-up.html">sign-up</a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="swiper-button-next btn"></div>
+		<div class="swiper-button-prev btn"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+
+<!--About-->
+   <div class="heading" id="Aboutus">
+	    <h1>About Us</h1>
+	    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos nam placeat facilis sunt dicta necessitatibus laudantium tempore modi beatae accusantium ducimus dolorum dolorem alias architecto, magni culpa? Dignissimos, illum fugit?</p>
+  </div>
+  <div class="contaniertwo">
+	<section class="about">
+		<div class="about-image" style="margin-left:30px; width: 0%;">
+			<img src="green3.jpy.jpg" alt="">
+		</div>
+		<div class="about-contant">
+			<h4>History</h4>
+			<p>Provide a brief overview of the founding of GET and its growth
+				over the years.Briefly describe the mission and values of Green
+				Environment Technologies and what sets it apart from other EPC firms.</p>
+				<a href="" class="read-more">Read More</a>
+		</div>
+	</section>
+</div>
+<div class="contanier">
+	<section class="about">
+		<div class="about-contant" style="margin-left: 30px;">
+			<h4>Mission and values</h4>
+			<p>Expand on the mission and values mentioned on
+				the home page, and provide more detail on the principles that guide
+				GET's work.</p>
+				<a href="" class="read-more">Read More</a>
+		</div>
+		<div class="about-image">
+			<img src="green1.jpy.jpg" alt="">
+		</div>
+	</section>
+</div>
+<div class="contanier">
+	<section class="about">
+		<div class="about-image" style="margin-left:30px; width: 0%;">
+			<img src="green2.jpy.jpg" alt="">
+		</div>
+		<div class="about-contant">
+			<h4>Team</h4>
+			<p>Introduce key members of the GET team, highlighting their
+				expertise and experience in environmental engineering, project
+				management, and other relevant areas.</p>
+				<a href="" class="read-more">Read More</a>
+		</div>
+	</section>
+	<hr>
+	<br>
+		<!--Services-->
+		<div class="heading" id="services">
 			<h1>Services</h1>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui nemo sed repellendus, cum dolorem enim atque nam rerum pariatur perferendis illo porro architecto fuga aliquam quis ullam magnam numquam?</p>
 			<div class="content-box">
@@ -204,7 +194,8 @@
 
 			</div>
 		</div>
-    <div class="container-1">
+    <!--blog-->
+	<div class="container-1" id="Blog">
 		<div class="heading">
 			<h1>Blog</h1>
 		</div>
@@ -224,12 +215,11 @@
 				</div>
 			</div>
 			<div class="button-blog">
-				<a href="#" class="btn">passion</a>
+				<a href="#" class="btn-1">passion</a>
 			</div>
 		    </div>
 			<div class="content">
              <p>We are reader-supported. When you buy through links on our site, we may earn affiliate commission.
-
 				Getting advice about green technology is tricky in the age of information. Frankly, the sheer amount that’s available can be overwhelming, and it’s hard to know which sources to trust. Some sites do a better job of nailing down the facts than others. If you’re looking for green tech blogs you should read, then check these out. They’re well known for both accuracy and current developments</p>
 				<h4>Grist</h5>
 				<p>Grist keeps the focus on environment and people. They’re a well-established blog and have been around since 1999. As a nonprofit, they accept donations in order to continue writing about clean energy, sustainable food sources, city-wide advances to improve quality of life, and environmental justice. Their ability to combine advances in technology with unbiased political reporting helps give readers a comprehensive image of the challenges the industry is facing.</p>
@@ -263,7 +253,8 @@
 			</div>
 		</main>
 	</div>
-    <div class="heading">
+	<!--projects-->
+	<div class="heading" id="project">
 		<h1>Projects</h1>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus qui nemo sed repellendus, cum dolorem enim atque nam rerum pariatur perferendis illo porro architecto fuga aliquam quis ullam magnam numquam?</p>
 		<div class="content-box">
@@ -320,61 +311,114 @@
 
 		</div>
 	</div>
+	<!--footer-->
 	<footer>
-     <div class="container_1">
-		<div class="sec aboutus">
-			<h2>
-				About Us
-			</h2>
-			<p>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, quisquam error est cumque delectus quas iusto non consectetur.
-			</p>
-		<ul class="sci">
-			<li><a href="https://www.facebook.com/home.php"><i class="fab fa-facebook"></i>
-			</a></li>
-			<li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>
-			</a></li>
-			<li><a href="https://www.instagram.com/?__coig_restricted=1"><i class="fab fa-instagram"></i>
-			</a></li>
-			<li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>
-			</a></li>
-		</ul>
-	</div>
-	 <div class="sec quicklinks">
-		<h2>Quick Links</h2>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Projects</a></li>
-			<li><a href="contact.html.html">Contact Us</a></li>
-		</ul>
-	 </div>
-	 <div class="sec contact">
-		<h2>Contact info</h2>
-		<ul class="info">
-			<li>
-				<span><i class="fa fa-map-marker"></i></span>
-				<span>209-C Faisal Town Lahore <br> punjab pakistan</span>
-			</li>
-			<li>
-				<span><i class="fa fa-phone-alt"></i></span>
-				<span> <a href="#+923035388246"></a> +92 303 5388246</span>
-			</li>
-			<li>
-				<span><i class="fa fa-envelope"></i></span>
-				<span>muhammadjahanzaib9@gmail.com</span>
-			</li>
-		</ul>
-	 </div>
-	 </div>
-	</footer>
-	<div class="copyrighttext">
-		<p>Copyright 2023 Green Environment Technologies. All Rights Reserved</p>
-	</div>
+		<div class="container_1">
+		   <div class="sec aboutus">
+			   <h2>
+				   About Us
+			   </h2>
+			   <p>
+				   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, quisquam error est cumque delectus quas iusto non consectetur.
+			   </p>
+		   <ul class="sci">
+			   <li><a href="https://www.facebook.com/home.php"><i class="fab fa-facebook"></i>
+			   </a></li>
+			   <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i>
+			   </a></li>
+			   <li><a href="https://www.instagram.com/?__coig_restricted=1"><i class="fab fa-instagram"></i>
+			   </a></li>
+			   <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>
+			   </a></li>
+		   </ul>
+	   </div>
+		<div class="sec quicklinks">
+		   <h2>Quick Links</h2>
+		   <ul>
+			   <li><a href="#">Home</a></li>
+			   <li><a href="#">About Us</a></li>
+			   <li><a href="#">Service</a></li>
+			   <li><a href="#">Blog</a></li>
+			   <li><a href="#">Projects</a></li>
+			   <li><a href="contact.html.html">Contact Us</a></li>
+		   </ul>
+		</div>
+		<div class="sec contact">
+		   <h2>Contact info</h2>
+		   <ul class="info">
+			   <li>
+				   <span><i class="fa fa-map-marker"></i></span>
+				   <span>209-C Faisal Town Lahore <br> punjab pakistan</span>
+			   </li>
+			   <li>
+				   <span><i class="fa fa-phone-alt"></i></span>
+				   <span> <a href="#+923035388246"></a> +92 303 5388246</span>
+			   </li>
+			   <li>
+				   <span><i class="fa fa-envelope"></i></span>
+				   <span>muhammadjahanzaib9@gmail.com</span>
+			   </li>
+		   </ul>
+		</div>
+		</div>
+	   </footer>
+	   <div class="copyrighttext">
+		   <p>Copyright 2023 Green Environment Technologies. All Rights Reserved</p>
+	   </div>
 	<!-- custom js file link  -->
+	
+ 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script>
+		const menu = document.querySelector('nav ul');
+		const menuBtn = document.querySelector('.menu-btn');
+		const closeBtn = document.querySelector('.close-btn');
+        
+
+		window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+
+		menuBtn.addEventListener("click", ()=>{
+			menu.classList.toggle('display');
+			
+		})
+
+		closeBtn.addEventListener("click", ()=>{
+			menu.classList.remove('display');
+		})
+	</script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 1,
+	spaceBetween: 5,
+	loop: true,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	autoplay:{
+		display: 3500,
+		disableOnInteraction:false,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	effect: "creative",
+	creativeEffect:{
+		prov:{
+			shadow: true,
+			translate:[0,0.400],
+		},
+		next:{
+			translate:["100%",0,0],
+		},
+	},
+  });
+    </script>
+    <script>
 		const toggleBtn = document.querySelector('.toggle_btn')
 		const toggleBtnIcon = document.querySelector('.toggle_btn i')
 		const dropdownMenu = document.querySelector('.dropdown_menu')
@@ -392,3 +436,5 @@
 		
 </body>
 </html>
+
+
