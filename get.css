@@ -74,8 +74,6 @@ ul li a:hover{
 .btn-close{
 	font-size: 1.3rem;
 	color: #045f19;
-	cursor: pointer;
-	display: none;
 }
 nav i{
 	color: #045f19;
@@ -115,11 +113,11 @@ nav i{
 	.btn-close{
 		position: absolute;
 		top: 0rem;
-		left: 15rem;
-		margin: 25px;
+		left: 10rem;
+		margin: 15px;
 	}
     .logo span{
-		font-size: 0.4rem;
+		font-size: 0.5rem;
 		font-weight: 150;
 	}
 }
