@@ -108,15 +108,15 @@ nav i{
 	}
     ul li a{
 	  display: block;
-      margin: 10px;
+          margin: 5px;
 	}
     
 	.btn-close{
 		position: absolute;
 		top: 0rem;
 		left: 10rem;
-		display: block;
 		margin: 15px;
+		display: block;
 	}
     .logo span{
 		font-size: 0.5rem;
