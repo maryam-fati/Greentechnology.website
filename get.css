@@ -4,12 +4,12 @@
 *{
 	margin: 0;
 	padding: 0;
-        text-decoration: none;
-        list-style: none;
+    text-decoration: none;
+    list-style: none;
 	box-sizing: border-box;
 	font-family: sans-serif;
 	text-transform: capitalize;
-        outline: none; border:none;
+  outline: none; border:none;
 }
 header{
 	background: #fff;
@@ -21,7 +21,7 @@ header{
 	max-width: 12000px;
 	margin: 0 auto;
 	width: 100%;
-        padding: 0 2rem;
+    padding: 0 2rem;
 }
 nav{
 	display: flex;
@@ -108,7 +108,7 @@ nav i{
 	}
     ul li a{
 	  display: block;
-          margin: 5px;
+      margin: 5px;
 	}
     
 	.btn-close{
@@ -120,7 +120,7 @@ nav i{
 	}
     .logo span{
 		font-size: 0.5rem;
-		font-weight: 150;
+		font-weight: 140;
 	}
 }
 /*slider*/
@@ -165,7 +165,7 @@ nav i{
 }
 .img_overlay h2{
 	font-size: 4.5rem;
-	color: #4fb753;
+	color: #199421;
 	letter-spacing: 5px;
 }
 .img_overlay a{
@@ -239,6 +239,12 @@ nav i{
 		color: #4fb753;
 		letter-spacing: 5px;
 	}
+	.img_overlay h1{
+		font-size: 40px;
+	}
+    .img_overlay h4{
+		font-size: 35px;
+	}
 }
 @media(max-width: 600px){
 	.btn{
@@ -261,15 +267,13 @@ nav i{
 	color: #045f19;
 	margin-bottom: 25px;
 	position: relative;
+	font-size: 60px;
 }
 .heading h1::after{
 	content: "";
 	position: absolute;
-    width: 100%;
-	height: 4px;
 	display: block;
 	margin: auto;
-	background-color: #199421;
 }
 .heading p{
 	font-size: 18px;
@@ -434,8 +438,51 @@ nav i{
 hr{
 	color: #045f19;
 }
+#tower{
+	width: 50%;
+	border-radius: 30px;
+}
+#water{
+	width: 52%;
+	height: 120px;
+	border-radius: 30px;
+}
+#solar{
+	width: 50%;
+	height: 120px;
+	border-radius: 30px;
+}
+/*client*/
+.c-body{
+	
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	
+}
+.client {
+	width: 100%;
+	height: 300px;
+  }
 
+  .company {
+	text-align: center;
+	font-size: 18px;
+	background: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
 
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
 /*blog*/
 .blog{
 	max-width: 114rem;
