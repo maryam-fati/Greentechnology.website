@@ -258,7 +258,10 @@
 	</div>
 
     <!--blog-->
-	<div class="container-1" id="Blog">
+	<div class="" id="Blog">
+	<div class="container-1 mySwiper">
+		<div class="blog-wrapper">
+		  <div class="blog-slide">
 		<div class="heading">
 			<h1>Blog</h1>
 		</div>
@@ -277,11 +280,9 @@
 					<p>may 6,2023</p>
 				</div>
 			</div>
-			<div class="button-blog">
-				<a href="#" class="btn-1">passion</a>
-			</div>
 		    </div>
 			<div class="content">
+					<h4>Scroll Container</h4>
              <p>We are reader-supported. When you buy through links on our site, we may earn affiliate commission.
 				Getting advice about green technology is tricky in the age of information. Frankly, the sheer amount that’s available can be overwhelming, and it’s hard to know which sources to trust. Some sites do a better job of nailing down the facts than others. If you’re looking for green tech blogs you should read, then check these out. They’re well known for both accuracy and current developments</p>
 				<h4>Grist</h5>
@@ -316,6 +317,12 @@
 			</div>
 		</main>
 	</div>
+</div>
+</div>
+<div class="">
+
+</div>
+</div>
 	<!--footer-->
 	<footer>
 		<div class="container_1">
@@ -374,7 +381,20 @@
 	
  
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<script>
+	
+
+    <script>
+		var swiper = new container-1(".mySwiper", {
+		  direction: "vertical",
+		  slidesPerView: "auto",
+		  freeMode: true,
+		  scrollbar: {
+			el: ".swiper-scrollbar",
+		  },
+		  mousewheel: true,
+		});
+	  </script>
+    <script>
 		const menu = document.querySelector('nav ul');
 		const menuBtn = document.querySelector('.menu-btn');
 		const closeBtn = document.querySelector('.close-btn');
