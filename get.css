@@ -254,7 +254,7 @@ nav i{
 
 
 /*about*/
-.heading{
+.heading-1{
 	width: 90%;
 	display: flex;
 	justify-content: center;
@@ -263,27 +263,22 @@ nav i{
 	text-align: center;
 	margin: 20px auto;
 }
-.heading h1{
+.heading-1 h1{
 	color: #045f19;
 	margin-bottom: 25px;
 	position: relative;
 	font-size: 60px;
 }
-.heading h1::after{
+.heading-1 h1::after{
 	content: "";
 	position: absolute;
 	display: block;
 	margin: auto;
 }
-.heading p{
+.heading-1 p{
 	font-size: 18px;
 	color: ;
 	margin-bottom: 35px;
-}
-.containertwo{
-	width: 90%;
-	margin: 0 auto;
-	padding: 10px 20px;
 }
 .about{
 	display: flex;
@@ -314,7 +309,7 @@ nav i{
 	margin-bottom:15px ;
 	color: #045f19;
 }
-.about-contant p{
+.b{
 	font-size:18px;
 	line-height: 1.5;
 	color: black;
@@ -334,16 +329,16 @@ nav i{
 .about-contant.read-more:hover{
 	background-color: #011001;
 }
-@media screen and (max-width:768px;){
-	.heading{
+@media(max-width:768px){
+	.heading-1{
 		padding: 0px 20px;
 	}
-	.heading h1{
-		font-size: 36px;
+	.heading-1 h1{
+		font-size: 25px;
 	}
-	.heading p{
+	.heading-1 p{
 		margin-bottom: 0px;
-		font-size: 10px;
+		font-size: 17px;
 	}
 	.containertwo{
 		padding: 0px;
@@ -351,22 +346,39 @@ nav i{
 	.about{
 		padding: 20px;
 		flex-direction: column;
-
 	}
 	.about-image{
 		margin-right: 0px;
-		margin-bottom: 20px;
+		margin-top: 15px;
+		margin-bottom: 0px;
 	}
-	.about-contant p{
-		font-size: 4px;
+	.b{
+		font-size: 11px;
 		padding: 0px;
 	}
 	.about-contant .read-more{
-		font-size: 11px;
+		font-size: 10px;
 	}
 }
-
 /*services*/
+.heading{
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px auto;
+}
+.heading h1{
+	color: #045f19;
+	margin-bottom: 25px;
+	position: relative;
+	font-size: 50px;
+}
+.heading p{
+	font-size:17px;
+}
 .content-box{
 	display: flex;
 	justify-content: space-between;
@@ -451,6 +463,20 @@ hr{
 	width: 50%;
 	height: 120px;
 	border-radius: 30px;
+}
+@media(max-width:487){
+	.heading h1{
+       font-size: 26px;
+	}
+}
+/*why choose us*/
+.cb-1 h4{
+	text-align: left;
+	font-size: 20px;
+	color: green;
+}
+.cb-1 p{
+	font-size:15px ;
 }
 /*client*/
 .c-body{
