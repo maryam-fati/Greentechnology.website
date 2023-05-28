@@ -478,37 +478,111 @@ hr{
 .cb-1 p{
 	font-size:15px ;
 }
-/*client*/
-.c-body{
-	
-	background: #eee;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	color: #000;
-	margin: 0;
-	padding: 0;
-	
-}
-.client {
-	width: 100%;
-	height: 300px;
-  }
-
-  .company {
-	text-align: center;
-	font-size: 18px;
-	background: #f5f5f5;
+/*clients*/
+.client-content{
+	min-height: 50vh;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-  }
+	justify-content: center;
+	background-color: #efefef;
+}
+.slides-containers{
+   max-width: 1200px;
+   width: 100%;
+   background-color: #efefee;
+   padding: 40px 0;
+}
+.slides-contents{
+	margin: 0 40px;
 
-  .swiper-slide img {
-	display: block;
-	width: 100%;
+}
+.cards-e{
+	border-radius: 25px;
+	background-color: #fff;
+}
+.image-content-text,
+.cards-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 14px;
+}
+.image-content-text{
+	position: relative;
+	row-gap: 5px;
+	padding: 25px 0;
+}
+.overlay{
+	position: absolute;
+	left: 0;
+	top: 0;
 	height: 100%;
+	width: 100%;
+	background-color: #199421;
+	border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: -40px;
+	height: 40px;
+	width: 40px;
+	background-color: #199421;
+
+}
+.overlay::after{
+	border-radius: 0 25px 0 0;
+	background-color: #fff;
+}
+.cards-image{
+	position: relative;
+	height: 150px;
+	width: 300px;
+	border-radius: 10px;
+	background: #fff;
+	padding: 3px;
+}
+.cards-image .card-image{
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
-  }
+	border-radius: 10px;
+	border: 4px solid #045f19;
+
+}
+.name{
+	font-size: 19px;
+	font-weight: 600;
+	color: #111;
+}
+.swiper-navBtn{
+	color: #4fb753;
+	transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+	color: #045f19;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+	font-size: 40px;
+}
+.swiper-button-next{
+	right: 0;
+}
+.swiper-button-prev{
+	left: 0;
+}
+.swiper-pagination-bullet{
+	background-color: #199421;
+	opacity: 1;
+}
+@media screen and (max-width: 768px) {
+	.slides-contents{
+		margin: 0 10px;
+	}
+}
 /*blog*/
     body {
 	  position: relative;
