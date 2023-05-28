@@ -6,6 +6,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
  />
+ <!--swiper css-->
+  <link rel="stylesheet" href="GET/swiper-bundle.min.css">
     <meta name="viewport" content="width=device-width , initial-scale=1">
     <title>Green Environment Technologies</title>
     <link rel="stylesheet" href="get.css">
@@ -193,23 +195,100 @@
 			    </div>
 			</div>
 		</div>
+		<hr>
     <!--clients-->
-	<div class="c-body">
-		<div class="client swiper mySwiper">
-			<div class="company swiper-wrapper">
-			  <div class="company swiper-slide">Slide 1</div>
-			  <div class="company swiper-slide">Slide 2</div>
-			  <div class="sompany swiper-slide">Slide 3</div>
-			  <div class="company swiper-slide">Slide 4</div>
-			  <div class="company swiper-slide">Slide 5</div>
-			  <div class="company swiper-slide">Slide 6</div>
-			  <div class="company swiper-slide">Slide 7</div>
-			  <div class="company swiper-slide">Slide 8</div>
-			  <div class="company swiper-slide">Slide 9</div>
-			</div>
-			<div class="swiper-pagination"></div>
-		  </div>
+	<div class="heading">
+		<h1>clients</h1>
 	</div>
+	<div class="client-content ">
+	<div class="slides-containers swiper">
+		<div class="slides-contents">
+			<div class="cards-warppers swiper-wrapper">
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="YBG.png" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="LCI.png" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">LUCKY CORE INDUSTRIES</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="green1.jpy.jpg" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="green1.jpy.jpg" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="green1.jpy.jpg" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="green1.jpy.jpg" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+				<div class="cards-e swiper-slide">
+					<div class="image-content-text">
+						<span class="overlay"></span>
+						<div class="cards-image">
+							<img src="green1.jpy.jpg" alt="" class="card-image">
+						</div>
+					</div>
+					<div class="cards-content">
+						<h2 class="name">Yunus Brothers Group</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-button-next swiper-navBtn"></div>
+		<div class="swiper-button-prev swiper-navBtn"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+<hr>
     <!--projects-->
 	<div class="heading" id="project">
 		<h1>Projects</h1>
@@ -479,9 +558,42 @@
 		  },
 		});
 	  </script>
-		<script src="get.js"></script>
+		
 		
 </body>
+<!--swiper js-->
+<script src="get.js"></script>
+<script src="GET/swiper-bundle.min.js"></script>
+<script>
+var swiper = new Swiper(".slides-contents", {
+	slidesPerView: 3,
+	spaceBetween: 25,
+	loop: true,
+	centerSlide: 'true',
+	fade: 'true',
+	gragCursor: 'true',
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+		dynamicBullets: true,
+	},
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		0: {
+			slidesPerView: 1,
+		},
+		520: {
+			slidesPerView: 2,
+		},
+		950: {
+			slidesPerView: 3,
+		},
+	},
+});
+</script>
 </html>
 
 
