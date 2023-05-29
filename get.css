@@ -480,16 +480,16 @@ hr{
 }
 /*clients*/
 .client-content{
-	min-height: 50vh;
+	min-height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #efefef;
+	background-color: #eee;
 }
 .slides-containers{
    max-width: 1200px;
    width: 100%;
-   background-color: #efefee;
+   background-color: #eee;
    padding: 40px 0;
 }
 .slides-contents{
@@ -509,33 +509,19 @@ hr{
 }
 .image-content-text{
 	position: relative;
-	row-gap: 5px;
+	row-gap: 3px;
 	padding: 25px 0;
 }
 .overlay{
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
+	height: 90%;
 	width: 100%;
-	background-color: #199421;
+	background-color: #fff;
 	border-radius: 25px 25px 0 25px;
 }
-.overlay::before,
-.overlay::after{
-	content: '';
-	position: absolute;
-	right: 0;
-	bottom: -40px;
-	height: 40px;
-	width: 40px;
-	background-color: #199421;
 
-}
-.overlay::after{
-	border-radius: 0 25px 0 0;
-	background-color: #fff;
-}
 .cards-image{
 	position: relative;
 	height: 150px;
@@ -549,13 +535,14 @@ hr{
 	width: 100%;
 	object-fit: cover;
 	border-radius: 10px;
-	border: 4px solid #045f19;
+	border: 4px solid #fff;
 
 }
 .name{
 	font-size: 19px;
 	font-weight: 600;
 	color: #111;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .swiper-navBtn{
 	color: #4fb753;
